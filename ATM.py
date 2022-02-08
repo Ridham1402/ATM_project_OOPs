@@ -146,8 +146,8 @@ def ATMprocess():
                         old_user=User(cardno, d['pin'], d['balance'])
                         old_user.authentication(cardno)
                         break
-        ans2=input("Exit[y/n]:")
-        if ans2=='y':
+        ans=input("Exit[y/n]:")
+        if ans=='y':
             print("ThankYou for using our services")
             break
         else:

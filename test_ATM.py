@@ -22,11 +22,12 @@ class TestUser:
         mohit = User(7520912456263237, 1211, 45282)
         print('\ntesting : withdrawl')
         mohit.withdraw()             
-        assert (45282) == (mohit.balance)       #test will fail as balance is no more the same showing that balance is updated
+        assert (45282) == (mohit.balance)           #test will fail as the balance is not same after transaction
+
 
     #testing deposit function
     def test_deposit(self):
         mohit = User(7520912456263237, 1211, 45282)
         print('\ntesting deposit')
         mohit.deposit()             
-        assert (45282) == (mohit.balance)           #test will fail as balance is no more the same showing that balance is updated
+        assert (45282) == (mohit.balance)           #test will fail as the balance is not same after transaction
