@@ -13,4 +13,4 @@ For testing of functions
 For logging of transactions
 
 # json file
-For storing of previously registered user
+For storing previously registered users
