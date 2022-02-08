@@ -5,4 +5,12 @@ Submission of backend task for DVM recruitment
 random, json, logging, pytest
 
 # Pytest file
-For testing, first comment out the function call of ATMprocess from ATM.py
+For testing of functions
+
+**For testing, first comment out the function call of ATMprocess from ATM.py
+
+# Log file
+For logging of transactions
+
+# json file
+For storing of previously registered user
