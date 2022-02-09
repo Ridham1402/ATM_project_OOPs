@@ -115,10 +115,15 @@ class User:
             print("\n")
 
 def new_user():
-    name=name2=input("Enter Name:")
+    name = name2=input("Enter Name:")
     usercardno=random.randint(1000000000000000,9999999999999999)
-    userpin=int(input("Set your 4 digit PIN:"))
-    name=User(usercardno, userpin, 0)
+    while(True):
+        userpin=int(input("Set your 4 digit PIN:"))
+        if(999<userpin<10000):
+            continue
+        else:
+            break
+    name = User(usercardno, userpin, 0)
     user_data={"name":name2, "cardno":usercardno, "pin":userpin, "balance":0}
     list_of_users.append(user_data)
     with open("users.json","r") as f2:
